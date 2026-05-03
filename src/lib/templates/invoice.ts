@@ -1,71 +1,57 @@
 export const invoiceTemplate = `
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <style>
-    body { margin: 0; padding: 0; background-color: #ffffff; font-family: 'Inter', system-ui, sans-serif; color: #111827; }
-    .container { max-width: 600px; margin: 40px auto; padding: 40px; border: 1px solid #f3f4f6; border-radius: 16px; }
-    .header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 48px; }
-    .logo { background: #4f46e5; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 900; font-size: 20px; }
-    .invoice-id { text-align: right; }
-    .invoice-id div { font-size: 12px; color: #6b7280; text-transform: uppercase; letter-spacing: 1px; }
-    .invoice-id strong { font-size: 14px; color: #111827; }
-    .h1 { font-size: 24px; font-weight: 700; margin-bottom: 8px; }
-    .status { display: inline-block; background: #dcfce7; color: #166534; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 99px; margin-bottom: 32px; }
-    table { width: 100%; border-collapse: collapse; margin-bottom: 32px; }
-    th { text-align: left; font-size: 12px; color: #6b7280; text-transform: uppercase; padding-bottom: 12px; border-bottom: 1px solid #f3f4f6; }
-    td { padding: 16px 0; border-bottom: 1px solid #f3f4f6; font-size: 14px; }
-    .total-row td { border-bottom: none; padding-top: 24px; font-size: 18px; font-weight: 700; }
-    .btn { display: block; background: #111827; color: #ffffff; text-align: center; padding: 14px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 14px; }
-    .footer { margin-top: 48px; font-size: 12px; color: #9ca3af; text-align: center; line-height: 1.5; }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px;">
-        <div class="logo">N</div>
-        <div class="invoice-id">
-            <div>Invoice #</div>
-            <strong>INV-2026-001</strong>
-        </div>
-    </div>
+<html style="height:100%; margin:0;">
+<body style="margin:0; background:#DFF1F1; font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif; min-height:100%;">
 
-    <h1 class="h1">Payment Received</h1>
-    <div class="status">Paid</div>
+<table width="100%" style="padding:40px 0; min-height:100vh;">
+<tr><td style="vertical-align:top;">
 
-    <p style="font-size: 14px; color: #4b5563; margin-bottom: 32px;">Hi {{name}}, thanks for your payment. Your subscription for <strong>Team Plan</strong> has been renewed.</p>
+<table width="100%" style="max-width:620px; margin:0 auto; background:#ffffff; border-radius:16px; border:1px solid #e2e8f0; overflow:hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
 
-    <table>
-      <thead>
-        <tr>
-          <th>Description</th>
-          <th style="text-align: right;">Amount</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Team Plan (Monthly) — 5 Seats</td>
-          <td style="text-align: right;">$49.00</td>
-        </tr>
-        <tr>
-          <td>Advanced Security Add-on</td>
-          <td style="text-align: right;">$10.00</td>
-        </tr>
-        <tr class="total-row">
-          <td>Total</td>
-          <td style="text-align: right;">$59.00</td>
-        </tr>
-      </tbody>
-    </table>
+<tr>
+<td style="padding:24px; background:#f1f5f9; color:#0f172a; font-weight:700;">
+MailQuark · Activity Report
+</td>
+</tr>
 
-    <a href="#" class="btn">Download PDF Receipt</a>
+<tr>
+<td style="padding:30px;">
 
-    <div class="footer">
-      Questions? Reply to this email or visit our help center.<br>
-      Notion Labs Inc. • 2300 Harrison St, San Francisco, CA
-    </div>
-  </div>
+<h2 style="color:#0f172a; margin:0 0 10px; font-size:20px;">System summary</h2>
+
+<p style="color:#475569; font-size:14px;">
+Last 24h email validation results:
+</p>
+
+<table width="100%" style="margin-top:20px; background:#f8fafc; border:1px solid #e2e8f0; border-radius:10px;">
+<tr>
+<td style="padding:16px; color:#475569;">Emails processed</td>
+<td align="right" style="padding:16px; color:#0f172a; font-weight:700;">128</td>
+</tr>
+<tr>
+<td style="padding:16px; color:#475569;">Failures detected</td>
+<td align="right" style="padding:16px; color:#dc2626; font-weight:700;">12</td>
+</tr>
+<tr>
+<td style="padding:16px; color:#475569;">Success rate</td>
+<td align="right" style="padding:16px; color:#16a34a; font-weight:700;">90.6%</td>
+</tr>
+</table>
+
+<div style="text-align:center; margin-top:24px;">
+<a href="#" style="background:#4f46e5; color:#fff; padding:12px 20px; border-radius:8px; text-decoration:none; font-weight:700; font-size:14px;">
+View full report
+</a>
+</div>
+
+</td>
+</tr>
+
+</table>
+
+</td></tr>
+</table>
+
 </body>
 </html>
 `;

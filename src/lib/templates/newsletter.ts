@@ -1,3 +1,78 @@
 export const newsletterTemplate = `
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office"><head><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="format-detection" content="telephone=no, date=no, address=no, email=no"><meta name="x-apple-disable-message-reformatting"><style>body{margin:0;padding:0}table{mso-table-lspace:0;mso-table-rspace:0}p,span,h1,h2,h3,h4,h5,h6{margin:0;padding:0}p{line-height:inherit}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}img+div{display:none}</style><!--[if !mso]><!--><style>@media (max-width: 450px) { .layout-0, .layout-1, .layout-2, .layout-3, .layout-4, .layout-5, .layout-7, .layout-8 { display: none !important; } .layout-0-under-450, .layout-1-under-450, .layout-2-under-450, .layout-3-under-450, .layout-4-under-450, .layout-5-under-450, .layout-7-under-450, .layout-8-under-450 { display: table !important; } } @media (max-width: 200px) { .layout-6 { display: none !important; } .layout-6-under-200 { display: table !important; } }</style><!--<![endif]--><style>@media(max-width:550px){.ers-fs-213{font-size:18.6px!important}.ers-fs-267{font-size:21.4px!important}.ers-fs-320{font-size:24px!important}.ers-fs-400{font-size:28px!important}}</style></head><body style="width:100%;-webkit-text-size-adjust:100%;text-size-adjust:100%;background-color:#f0f1f5;margin:0;padding:0"><table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#f0f1f5" style="background-color:#f0f1f5"><tbody><tr><td style="background-color:#f0f1f5"><table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width:600px;min-height:600px;margin:0 auto;background-color:#ffffff"><tbody><tr><td style="vertical-align:top"><table cellpadding="0" cellspacing="0" border="0" style="width:100%"><tbody><tr><td align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px"><tbody><tr><td style="width:100%;padding:0"><img src="https://hzyv1fc1xsbtvuqwvplyk_d78_8hsvohqgpqbxhwjvy.canva-cdn.email/a4bd292f1bd955e973f9ca6398640710.png" width="600" height="393" style="display:block;width:100%;height:auto;max-width:100%"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr><td style="vertical-align:top;padding:0px"><table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation"><tbody><tr><td style="padding:24px 0 24px 0;vertical-align:top"><table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="color:#000;font-style:normal;font-weight:normal;font-size:16px;line-height:1.4;letter-spacing:0;text-align:left;direction:ltr;border-collapse:collapse;font-family:Arial, Helvetica, sans-serif;white-space:normal;word-wrap:break-word;word-break:break-word"><tbody><tr><td dir="ltr" style="font-size:16px;text-align:left;padding:0px 24px 16px;line-height:1.4;mso-line-height-alt:22px"><span class="ers-fs-267" style="font-size:26.7px;font-weight:700;letter-spacing:-0.03em;font-family:Georgia, serif;white-space:pre-wrap">Hi coffee lover!</span><br><br><span style="white-space:pre-wrap">Every month, we share what’s brewing at the roastery from new arrivals and customer favorites to easy tips that make your morning ritual even better. Grab a mug and let’s dive in.</span></td></tr><tr><td style="padding:0px 0px 16px"><table border="0" cellpadding="0" cellspacing="0" align="center" style="display:table;width:100%;max-width:100%;table-layout:fixed;margin:0 auto;background-color:#ff7536"><tbody><tr><td width="49.68%" style="vertical-align:bottom"><img src="https://hzyv1fc1xsbtvuqwvplyk_d78_8hsvohqgpqbxhwjvy.canva-cdn.email/39a216e1460da34baffb904c9197d20d.jpg" width="299" style="display:block;width:100%;height:auto;"></td><td width="50.32%" style="padding:25px;vertical-align:bottom"><h2 style="font-size:40px;letter-spacing:-0.03em;font-family:Georgia, serif;">Sustainably delicious</h2><p style="font-size:16px;line-height:1.2;">Our beans don’t just taste good. They do good. Every bag supports fair-trade farming and comes in eco packaging.</p></td></tr></tbody></table></td></tr><tr><td dir="ltr" class="ers-fs-320" style="font-size:32px;font-weight:700;letter-spacing:-0.03em;font-family:Georgia, serif;text-align:left;padding:0px 24px 16px;">New arrivals</td></tr><tr><td style="padding:0px 24px 16px"><table width="100%" bgcolor="#fffdef"><tr><td style="padding:20px;text-align:center;"><h3 style="font-weight:700;">Morning Blend</h3><p>Smooth & mellow</p><p style="color:#ff7536;font-weight:700;text-decoration:underline;margin-top:10px;">Shop now</p></td><td width="48.55%"><img src="https://hzyv1fc1xsbtvuqwvplyk_d78_8hsvohqgpqbxhwjvy.canva-cdn.email/beb50877a9d86968ae4fdd6db580ccc6.jpg" width="100%" style="display:block;"></td></tr></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></body></html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" style="height:100%; margin:0;">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style>
+    body { margin: 0; padding: 0; background-color: #DFF1F1; min-height: 100%; }
+    @media (max-width: 450px) { .layout-0, .layout-1 { display: none !important; } }
+  </style>
+</head>
+<body style="width:100%; background-color:#DFF1F1; margin:0; padding:0;">
+  <div style="background-color:#DFF1F1; padding:40px 0; min-height:100vh;">
+    <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" 
+           style="max-width:600px; margin:0 auto; background-color:#ffffff; border-radius:24px; overflow:hidden; border:1px solid rgba(0,0,0,0.05); box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+      <tbody>
+        <tr>
+          <td style="vertical-align:top">
+            <!-- HERO IMAGE -->
+            <table cellpadding="0" cellspacing="0" border="0" style="width:100%">
+              <tr>
+                <td style="width:100%; padding:0">
+                  <img src="https://hzyv1fc1xsbtvuqwvplyk_d78_8hsvohqgpqbxhwjvy.canva-cdn.email/a4bd292f1bd955e973f9ca6398640710.png" 
+                       width="600" style="display:block; width:100%; height:auto; max-width:100%">
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align:top; padding:0px">
+            <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+              <tr>
+                <td style="padding:40px; vertical-align:top">
+                  <h2 style="font-family:Georgia, serif; font-size:26px; font-weight:700; color:#1a1a1a; margin:0 0 16px;">Hi coffee lover!</h2>
+                  <p style="font-family:Arial, sans-serif; font-size:16px; line-height:1.6; color:#4a4a4a; margin:0 0 24px;">
+                    Every month, we share what’s brewing at the roastery from new arrivals and customer favorites to easy tips that make your morning ritual even better. Grab a mug and let’s dive in.
+                  </p>
+                  
+                  <!-- FEATURE -->
+                  <table border="0" cellpadding="0" cellspacing="0" align="center" style="width:100%; background-color:#ff7536; border-radius:16px; overflow:hidden; margin-bottom:32px;">
+                    <tr>
+                      <td width="45%" style="vertical-align:middle">
+                        <img src="https://hzyv1fc1xsbtvuqwvplyk_d78_8hsvohqgpqbxhwjvy.canva-cdn.email/39a216e1460da34baffb904c9197d20d.jpg" width="100%" style="display:block;">
+                      </td>
+                      <td width="55%" style="padding:25px; color:#ffffff;">
+                        <h3 style="font-family:Georgia, serif; font-size:24px; margin:0 0 10px;">Sustainably delicious</h3>
+                        <p style="font-size:14px; line-height:1.4; margin:0;">Our beans don’t just taste good. They do good. Every bag supports fair-trade farming.</p>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!-- NEW ARRIVALS -->
+                  <h3 style="font-family:Georgia, serif; font-size:22px; margin:0 0 16px;">New arrivals</h3>
+                  <table width="100%" bgcolor="#fffdef" style="border-radius:16px; overflow:hidden;">
+                    <tr>
+                      <td style="padding:20px;">
+                        <h4 style="font-family:Arial, sans-serif; font-weight:700; margin:0 0 5px;">Morning Blend</h4>
+                        <p style="font-size:14px; color:#666; margin:0 0 10px;">Smooth & mellow</p>
+                        <a href="#" style="color:#ff7536; font-weight:700; text-decoration:underline;">Shop now</a>
+                      </td>
+                      <td width="40%">
+                        <img src="https://hzyv1fc1xsbtvuqwvplyk_d78_8hsvohqgpqbxhwjvy.canva-cdn.email/beb50877a9d86968ae4fdd6db580ccc6.jpg" width="100%" style="display:block;">
+                      </td>
+                    </tr>
+                  </table>
+
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
 `;

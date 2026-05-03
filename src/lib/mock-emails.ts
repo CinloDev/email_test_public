@@ -19,21 +19,21 @@ export const MOCK_EMAILS = [
   },
   {
     id: '2',
-    from_address: '"Apple Billing" <no-reply@apple.com>',
-    to_address: 'finance@cinlodev.com',
-    subject: 'Your receipt from Apple for Order #MQ-88229',
-    text_content: 'Receipt',
+    from_address: '"Mug Life Coffee" <news@muglife.coffee>',
+    to_address: 'dev@cinlodev.com',
+    subject: '☕ Coffee, redefined: Discover our new arrivals',
+    text_content: 'Discover our new sustainable coffee blends.',
     html_content: receiptTemplate,
-    has_attachments: 1,
+    has_attachments: 0,
     status: 'pass',
     created_at: new Date(Date.now() - 1000 * 60 * 60 * 2).toISOString()
   },
   {
     id: '3',
-    from_address: '"Security Team" <security@github.com>',
-    to_address: 'admin@cinlodev.com',
-    subject: '[GitHub] Critical Security: A new SSH key was added',
-    text_content: 'Security alert',
+    from_address: '"MailQuark Payments" <billing@mailquark.io>',
+    to_address: 'finance@cinlodev.com',
+    subject: 'Payment received: Your transaction was successful',
+    text_content: 'Your transaction of $24.00 was successful.',
     html_content: securityTemplate,
     has_attachments: 0,
     status: 'pass',
@@ -41,7 +41,7 @@ export const MOCK_EMAILS = [
   },
   {
     id: '4',
-    from_address: '"Mug Life Coffee" <mug@muglife.coffee>',
+    from_address: '"Newsletter Team" <hello@newsletter.io>',
     to_address: 'leads@cinlodev.com',
     subject: 'Wait! Don\'t miss this offer {{discount}}% OFF',
     text_content: 'Coffee news',
@@ -63,10 +63,10 @@ export const MOCK_EMAILS = [
   },
   {
     id: '7',
-    from_address: '"Notion Billing" <billing@notion.so>',
-    to_address: 'finance@cinlodev.com',
-    subject: 'Invoice Paid: Thank you for your subscription 📄',
-    text_content: 'Subscription invoice',
+    from_address: '"System Monitor" <bot@mailquark.io>',
+    to_address: 'admin@cinlodev.com',
+    subject: 'MailQuark · Activity Report [Last 24h]',
+    text_content: 'System summary: 128 emails processed.',
     html_content: invoiceTemplate,
     has_attachments: 0,
     status: 'pass',
@@ -75,8 +75,5 @@ export const MOCK_EMAILS = [
 ];
 
 export const MOCK_ATTACHMENTS: Record<string, any[]> = {
-  '2': [
-    { id: 'att-1', filename: 'receipt_apple_MQ88.pdf', size: 85000, content_type: 'application/pdf' },
-    { id: 'att-2', filename: 'terms_and_conditions.pdf', size: 1240000, content_type: 'application/pdf' }
-  ]
+  // Ya no hay adjuntos para el ID 2 porque cambió a newsletter
 };

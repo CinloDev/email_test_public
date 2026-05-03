@@ -1,35 +1,56 @@
 export const securityTemplate = `
-  <div style="background:#0d1117;padding:40px;font-family:Arial,sans-serif;">
-    <table width="100%" style="max-width:600px;margin:0 auto;background:#161b22;border:1px solid #30363d;border-radius:12px;">
-      
-      <tr>
-        <td style="background:#21262d;color:#f85149;padding:16px;font-weight:700;">
-          🚨 Security Alert
-        </td>
-      </tr>
+<!DOCTYPE html>
+<html style="height:100%; margin:0;">
+<body style="margin:0; background:#DFF1F1; font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif; min-height:100%;">
 
-      <tr>
-        <td style="padding:24px;">
-          
-          <p style="color:#c9d1d9;">Hey <strong>cinlodev</strong>,</p>
+<table width="100%" cellpadding="0" cellspacing="0" style="padding:40px 0; min-height:100vh;">
+<tr><td style="vertical-align:top;">
 
-          <h3 style="margin:12px 0;color:#ffffff;">New SSH key detected</h3>
+<table width="100%" style="max-width:600px; margin:0 auto; background:#ffffff; border-radius:12px; border:1px solid #e6ebf1; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
 
-          <p style="color:#8b949e;">
-            A new SSH key was added from IP <strong>192.168.1.105</strong>.
-          </p>
+<tr>
+<td style="padding:24px 32px; border-bottom:1px solid #e6ebf1; font-weight:600;">
+MailQuark
+</td>
+</tr>
 
-          <div style="background:#3d2f00;border:1px solid #9e6a03;padding:12px;margin:18px 0;border-radius:6px;color:#facc15;">
-            If this wasn't you, act immediately.
-          </div>
+<tr>
+<td style="padding:32px;">
+<h2 style="margin:0 0 10px; font-size:20px; color:#1a1f36;">
+Payment received
+</h2>
 
-          <a href="#" style="background:#f85149;color:#ffffff;padding:10px 16px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:700;">
-            Review activity
-          </a>
+<p style="color:#4f566b; font-size:14px;">
+Your transaction was successful. Here are the details:
+</p>
 
-        </td>
-      </tr>
+<table width="100%" style="margin-top:20px; font-size:14px;">
+<tr>
+<td style="padding:8px 0; color:#6b7280;">Amount</td>
+<td align="right">$24.00</td>
+</tr>
+<tr>
+<td style="padding:8px 0; color:#6b7280;">Date</td>
+<td align="right">May 3, 2026</td>
+</tr>
+<tr>
+<td style="padding:8px 0; color:#6b7280;">Status</td>
+<td align="right" style="color:#16a34a; font-weight:600;">Completed</td>
+</tr>
+</table>
 
-    </table>
-  </div>
+<a href="#" style="display:inline-block; margin-top:24px; padding:10px 16px; background:#635bff; color:#fff; border-radius:6px; text-decoration:none; font-size:13px;">
+View details
+</a>
+
+</td>
+</tr>
+
+</table>
+
+</td></tr>
+</table>
+
+</body>
+</html>
 `;
