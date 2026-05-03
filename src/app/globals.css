@@ -1,0 +1,600 @@
+/* --- MailQuark Professional Design System (Clean Version) --- */
+
+:root {
+  --bg-main: #070708;
+  --bg-sidebar: #0d0d0f;
+  --bg-card: #121214;
+  --accent: #6366f1;
+  --accent-muted: rgba(99, 102, 241, 0.1);
+  --accent-hover: #4f46e5;
+  --text-main: #e1e1e6;
+  --text-muted: #a1a1aa;
+  --text-dark: #71717a;
+  --border: rgba(255,255,255,0.08);
+  --danger: #f75a68;
+  --success: #10b981;
+}
+
+/* 1. Reset & Base */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background: var(--bg-main);
+  color: var(--text-main);
+  font-family: 'Inter', -apple-system, sans-serif;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+button { 
+  background: none; 
+  border: none; 
+  color: inherit; 
+  cursor: pointer; 
+  display: flex; 
+  align-items: center; 
+  gap: 8px; 
+  transition: 0.2s; 
+}
+
+/* 2. Home Screen */
+.home-screen { 
+  min-height: 100vh;
+  width: 100%;
+  display: flex; 
+  flex-direction: column;
+  align-items: center; 
+  background: radial-gradient(circle at top right, #121214, #0a0a0c); 
+  z-index: 10;
+  overflow-y: auto;
+  padding: 60px 20px;
+}
+
+.home-container { 
+  max-width: 800px; 
+  width: 100%; 
+  margin: auto 0; /* Centrado vertical flexible */
+  text-align: center; 
+}
+
+.brand-large { 
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+  gap: 20px; 
+  margin-bottom: 40px; 
+}
+
+.brand-large h1 { 
+  font-size: 4rem; 
+  font-weight: 900; 
+  letter-spacing: -3px; 
+  color: #fff; 
+}
+
+.brand-large h1 span { color: var(--accent); }
+
+.tagline { 
+  font-size: 1.2rem; 
+  color: var(--text-muted); 
+  margin-bottom: 60px; 
+}
+
+.status-grid { 
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 24px; 
+  margin-bottom: 60px; 
+  width: 100%;
+}
+
+.status-card { 
+  background: var(--bg-card); 
+  border: 1px solid var(--border); 
+  padding: 30px; 
+  border-radius: 24px; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center;
+  gap: 15px; 
+  transition: 0.3s;
+}
+
+.status-card:hover { 
+  transform: translateY(-5px); 
+  border-color: var(--accent);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.status-label { 
+  font-size: 0.75rem; 
+  font-weight: 800; 
+  color: var(--text-dark); 
+  text-transform: uppercase; 
+  letter-spacing: 1px; 
+}
+
+.status-value { 
+  font-size: 1.1rem; 
+  font-weight: 700; 
+  color: #fff; 
+}
+
+.status-dot { 
+  width: 10px; 
+  height: 10px; 
+  border-radius: 50%; 
+  box-shadow: 0 0 10px currentColor; 
+}
+
+.status-dot.online { 
+  background: var(--success); 
+  color: var(--success); 
+}
+
+.btn-primary-large { 
+  background: var(--accent); 
+  color: #fff; 
+  padding: 20px 45px; 
+  border-radius: 18px; 
+  font-size: 1.2rem; 
+  font-weight: 800; 
+  justify-content: center; 
+  box-shadow: 0 15px 35px rgba(99, 102, 241, 0.3); 
+  margin: 0 auto;
+}
+
+/* 3. Login Screen */
+.login-screen { 
+  position: fixed; 
+  inset: 0; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  background: #070708; 
+  z-index: 1000; 
+}
+
+.login-card { 
+  background: var(--bg-card); 
+  padding: 60px; 
+  border-radius: 40px; 
+  border: 1px solid var(--border); 
+  width: 500px; 
+  text-align: center; 
+  box-shadow: 0 40px 100px rgba(0,0,0,0.8), 0 0 80px rgba(99, 102, 241, 0.05);
+}
+
+.brand-header-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.brand-icon-login {
+  color: var(--accent);
+  filter: drop-shadow(0 0 15px rgba(99, 102, 241, 0.3));
+}
+
+.brand-name-login {
+  font-size: 3rem;
+  font-weight: 950;
+  letter-spacing: -2px;
+  color: #fff;
+}
+
+.brand-name-login span { color: var(--accent); }
+
+.login-subheader { margin-bottom: 40px; }
+.login-subheader h2 { font-size: 1.4rem; font-weight: 800; color: #fff; margin-bottom: 8px; }
+.login-subheader p { font-size: 1rem; color: var(--text-dark); }
+
+.login-input-wrapper { position: relative; margin-bottom: 24px; }
+
+.login-input { 
+  width: 100%; 
+  background: #16161a; 
+  border: 1px solid #242429; 
+  padding: 20px; 
+  border-radius: 18px; 
+  color: #fff; 
+  text-align: center; 
+  font-size: 1.3rem; 
+  outline: none; 
+}
+
+.login-input:focus { border-color: var(--accent); box-shadow: 0 0 0 4px var(--accent-muted); }
+
+.password-toggle { position: absolute; right: 20px; top: 50%; transform: translateY(-50%); color: var(--text-dark); }
+
+.login-submit { 
+  width: 100%; 
+  background: var(--accent); 
+  color: #fff; 
+  padding: 20px; 
+  border-radius: 18px; 
+  font-weight: 900; 
+  justify-content: center; 
+}
+
+/* 4. Dashboard Layout */
+.app-shell { 
+  display: flex; 
+  width: 100vw; 
+  height: 100vh; 
+  background: var(--bg-main); 
+  position: fixed; 
+  inset: 0; 
+}
+
+.sidebar { 
+  width: 380px; 
+  background: var(--bg-sidebar); 
+  border-right: 1px solid var(--border); 
+  display: flex; 
+  flex-direction: column; 
+  flex-shrink: 0; 
+}
+
+.viewport { 
+  flex: 1; 
+  display: flex; 
+  flex-direction: column; 
+  overflow: hidden; 
+}
+
+.sidebar-header { 
+  padding: 24px; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  border-bottom: 1px solid var(--border); 
+}
+
+.brand { 
+  display: flex; 
+  align-items: center; 
+  gap: 10px; 
+  font-weight: 800; 
+  color: var(--accent); 
+  font-size: 1.2rem; 
+}
+
+.icon-btn { 
+  padding: 10px; 
+  border-radius: 10px; 
+  background: rgba(255,255,255,0.03); 
+  color: var(--text-dark); 
+  border: 1px solid var(--border); 
+}
+
+.search-container { padding: 20px 16px; position: relative; display: flex; align-items: center; }
+.search-icon { position: absolute; left: 32px; color: var(--accent); }
+.search-input { width: 100%; background: #121214; border: 1px solid #242429; padding: 12px 12px 12px 45px; border-radius: 14px; color: #fff; outline: none; }
+
+.email-list { flex: 1; overflow-y: auto; padding: 12px; }
+.email-card { padding: 18px; border-radius: 16px; margin-bottom: 10px; cursor: pointer; border: 1px solid transparent; }
+.email-card.active { background: #16161a; border-color: var(--border); }
+.card-subject { font-size: 0.95rem; font-weight: 700; color: var(--accent); margin-bottom: 6px; }
+.card-meta { font-size: 0.8rem; color: var(--text-dark); }
+
+/* 5. Viewer Components */
+.viewer-header { padding: 40px 60px; background: var(--bg-sidebar); border-bottom: 1px solid var(--border); }
+.subject-line { display: flex; justify-content: space-between; align-items: center; }
+.subject-line h1 { font-size: 2.2rem; font-weight: 900; color: #fff; }
+.view-tabs { display: flex; gap: 8px; margin-top: 30px; }
+.view-tabs button { padding: 10px 20px; border-radius: 12px; font-size: 0.8rem; font-weight: 800; color: var(--text-dark); background: #16161a; }
+.view-tabs button.active { background: var(--accent); color: #fff; }
+
+.action-bar { padding: 20px 60px; display: flex; justify-content: flex-end; gap: 15px; border-bottom: 1px solid var(--border); }
+.content-area { flex: 1; padding: 40px 60px; display: flex; flex-direction: column; }
+.viewer-container { flex: 1; background: #fff; border-radius: 24px; overflow: hidden; }
+
+/* 6. Modals & Shared */
+.modal-overlay { 
+  position: fixed; 
+  inset: 0; 
+  background: rgba(0,0,0,0.85); 
+  backdrop-filter: blur(12px); 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  z-index: 10000; 
+}
+
+.modal-card { 
+  background: var(--bg-card); 
+  padding: 40px; 
+  border-radius: 32px; 
+  border: 1px solid var(--accent); 
+  width: 450px; 
+}
+
+.modal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; }
+.modal-header h3 { font-size: 1.5rem; color: #fff; font-weight: 800; }
+.close-x { font-size: 2rem; color: var(--text-dark); }
+.modal-body { color: var(--text-muted); font-size: 1.1rem; line-height: 1.5; margin-bottom: 32px; }
+.modal-footer { display: flex; justify-content: flex-end; gap: 12px; }
+
+.btn-cancel { padding: 12px 24px; border-radius: 12px; color: var(--text-main); font-weight: 700; background: rgba(255,255,255,0.03); }
+.btn-confirm { padding: 12px 24px; border-radius: 12px; color: #fff; font-weight: 800; background: var(--accent); }
+
+.toast-container-v2 {
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  width: 360px;
+  background: #121214; /* Fondo sólido y elegante */
+  border: 1px solid rgba(99, 102, 241, 0.4); /* Borde más visible con el color de acento */
+  border-radius: 20px;
+  overflow: hidden;
+  z-index: 10000;
+  box-shadow: 
+    0 25px 50px -12px rgba(0, 0, 0, 0.7),
+    0 0 20px rgba(99, 102, 241, 0.15);
+}
+
+.toast-glow {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.toast-inner {
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  position: relative;
+  z-index: 1;
+}
+
+.toast-icon-v2 {
+  width: 44px;
+  height: 44px;
+  background: var(--accent);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  flex-shrink: 0;
+  position: relative;
+  box-shadow: 0 8px 16px rgba(99, 102, 241, 0.3);
+}
+
+.icon-pulse {
+  position: absolute;
+  inset: -4px;
+  border: 2px solid var(--accent);
+  border-radius: 16px;
+  opacity: 0;
+  animation: pulse-ring 2s infinite;
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.8); opacity: 0.5; }
+  100% { transform: scale(1.2); opacity: 0; }
+}
+
+.toast-content-v2 {
+  flex: 1;
+  min-width: 0;
+}
+
+.toast-title-v2 {
+  font-size: 0.95rem;
+  font-weight: 850;
+  color: #fff;
+  margin-bottom: 2px;
+  letter-spacing: -0.01em;
+}
+
+.toast-body-v2 {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.toast-progress-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(to right, var(--accent), #a855f7);
+  box-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
+  transition: width 0.1s linear;
+}
+
+.animate-slide-in {
+  animation: slideInRight 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(120%) scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+}
+
+/* 7. Footer & Utils */
+.home-footer { 
+  margin-top: 100px; 
+  padding-bottom: 40px; /* Aire extra abajo para móviles */
+  font-size: 0.85rem; 
+  color: var(--text-dark); 
+  letter-spacing: 0.5px; 
+  text-align: center; 
+}
+.home-footer strong { color: var(--accent); }
+
+/* 8. Shared UI Components */
+.input-wrapper-shared {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.input-base-shared {
+  width: 100%;
+  background: #16161a;
+  border: 1px solid #242429;
+  padding: 18px 20px;
+  border-radius: 18px;
+  color: #fff;
+  outline: none;
+  transition: 0.3s;
+  font-size: 1.1rem;
+}
+
+.input-base-shared:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 4px var(--accent-muted);
+  background: #1a1a20;
+}
+
+.input-base-shared.with-icon {
+  padding-left: 48px;
+}
+
+.input-icon-shared {
+  position: absolute;
+  left: 18px;
+  color: var(--accent);
+  pointer-events: none;
+}
+
+.input-right-shared {
+  position: absolute;
+  right: 18px;
+  display: flex;
+  align-items: center;
+}
+
+/* Ajustes específicos para Login para que coincidan con Button */
+.login-card .input-wrapper-shared {
+  margin-bottom: 24px;
+}
+
+.login-card .input-base-shared {
+  font-size: 1.2rem;
+  padding: 20px;
+  text-align: center;
+}
+
+.login-card .password-toggle {
+  position: relative;
+  right: 0;
+  top: 0;
+  transform: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
+  transition: 0.2s;
+}
+.login-card .password-toggle:hover { opacity: 1; color: var(--accent); }
+
+/* Botones de Modal más grandes y legibles */
+.modal-footer .btn-confirm,
+.modal-footer .btn-cancel {
+  padding: 16px 32px;
+  font-size: 1rem;
+  border-radius: 14px;
+  font-weight: 800;
+  min-width: 140px;
+  justify-content: center;
+}
+
+.animate-in { animation: fadeIn 0.4s ease-out; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+.spinning { animation: spin 1s linear infinite; }
+@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+/* --- 9. Responsividad (Mobile First) --- */
+
+@media (max-width: 1024px) {
+  .sidebar { width: 320px; }
+}
+
+@media (max-width: 768px) {
+  /* Home */
+  .brand-large h1 { font-size: 2.5rem; }
+  .status-grid { grid-template-columns: 1fr; gap: 15px; }
+  .home-container { padding: 20px; }
+  
+  /* Login */
+  .login-card { width: 90%; padding: 40px 20px; border-radius: 24px; }
+  .brand-name-login { font-size: 2rem; }
+
+  /* Dashboard Structure */
+  .app-shell { flex-direction: column; }
+  .sidebar { 
+    width: 100%; 
+    height: 100%; 
+    border-right: none;
+    z-index: 50;
+  }
+  .viewport {
+    position: fixed;
+    inset: 0;
+    background: var(--bg-main);
+    z-index: 100;
+    display: none; /* Se mostrará condicionalmente con JS */
+  }
+  .viewport.active {
+    display: flex;
+  }
+
+  /* Viewer Adjustments */
+  .viewer-header { padding: 20px; }
+  .viewer-header h1 { font-size: 1.2rem; }
+  .viewer-footer-actions { 
+    padding: 15px; 
+    flex-wrap: wrap; 
+    gap: 10px; 
+  }
+  .viewer-footer-actions {
+    justify-content: center; /* Centrar los iconos */
+    gap: 8px;
+    padding: 10px;
+  }
+  
+  .meta-label { min-width: 50px; font-size: 0.7rem; }
+  .meta-value { font-size: 0.8rem; }
+  
+  .desktop-only {
+    display: none !important;
+  }
+  
+  /* Tabs Capsule */
+  .capsule-btn { padding: 0 12px; font-size: 0.7rem; }
+}
+
+@media (max-width: 480px) {
+  .brand-large h1 { font-size: 2.2rem; }
+  .brand-large { gap: 12px; margin-bottom: 20px; }
+  .tagline { font-size: 0.9rem; padding: 0 20px; margin-bottom: 30px; }
+  .status-grid { gap: 10px; margin-bottom: 30px; }
+  .status-card { padding: 18px; gap: 8px; }
+  .status-value { font-size: 1rem; }
+  .btn-primary-large { width: 90%; padding: 15px; font-size: 1rem; }
+  .home-footer { margin-top: 50px; padding-bottom: 30px; }
+}
