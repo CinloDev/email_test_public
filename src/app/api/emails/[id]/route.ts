@@ -1,5 +1,6 @@
+// Forced refresh
 import { NextRequest, NextResponse } from 'next/server';
-import { MOCK_EMAILS, MOCK_ATTACHMENTS } from '@/lib/seeder';
+import { MOCK_EMAILS, MOCK_ATTACHMENTS } from '../../../../lib/mock-emails';
 
 export async function GET(
   request: NextRequest,

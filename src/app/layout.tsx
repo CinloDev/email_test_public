@@ -2,8 +2,11 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "MailQuark | Fake SMTP Tester",
-  description: "A premium email testing tool for developers.",
+  title: "MailQuark | High-End Email QA Dashboard",
+  description: "Professional email testing and inspection dashboard. Intercept, validate and preview your emails in a premium developer environment.",
+  icons: {
+    icon: 'data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>',
+  }
 };
 
 export default function RootLayout({
